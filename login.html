@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+
+    
+    <div class="container">
+        <h2>Sign UP</h2>
+        <form id="registrationForm">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" placeholder="Enter your first name">
+                    <div id="firstNameMessage" class="message"></div>
+                </div>
+
+                <div class="grid-item">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" placeholder="Enter your last name">
+                    <div id="lastNameMessage" class="message"></div>
+                </div>
+
+                <div class="grid-item">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <div id="emailMessage" class="message"></div>
+                </div>
+
+                <div class="grid-item">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" placeholder="Enter your phone number">
+                    <div id="phoneMessage" class="message"></div>
+                </div>
+
+                <div class="grid-item">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" placeholder="Enter your address">
+                    <div id="addressMessage" class="message"></div>
+                </div>
+
+                <div class="grid-item">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" placeholder="Enter your city">
+                    <div id="cityMessage" class="message"></div>
+                </div>
+
+                <div class="grid-item">
+                    <label for="postalCode">Postal Code:</label>
+                    <input type="text" id="postalCode" placeholder="Enter your postal code">
+                    <div id="postalCodeMessage" class="message"></div>
+                </div>
+
+                <div class="grid-item">
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" placeholder="Enter your country">
+                    <div id="countryMessage" class="message"></div>
+                </div>
+<div class="grid-item">
+    <label for="Password">Password:</label>
+    <div class="password-container">
+        <input type="password" id="Password" placeholder="Enter your password">
+        <span class="toggle-password open" id="togglePasswordOpen" style="display: inline;">👁️</span>
+        <span class="toggle-password closed" id="togglePasswordClosed" style="display: none;">🙈</span>
+    </div>
+    <div id="passwordMessage" class="message"></div>
+</div>
+
+
+                <div class="grid-item">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm your password">
+                    <div id="confirmPasswordMessage" class="message"></div>
+                </div>
+
+                <div class="grid-item terms">
+                    <label>
+                        <input type="checkbox" id="terms">
+                        I agree to the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy
+                            Policy</a>
+                    </label>
+                    <div id="termsMessage" class="message"></div>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>
